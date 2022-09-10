@@ -1,0 +1,208 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed Dec  9 13:32:32 2020
+| Host         : LAPTOP-K2GE89I5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   136 |
+| Unused register locations in slices containing registers |   320 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           25 |
+| No           | No                    | Yes                    |             246 |           97 |
+| No           | Yes                   | No                     |            1905 |          579 |
+| Yes          | No                    | No                     |              97 |           43 |
+| Yes          | No                    | Yes                    |             631 |          302 |
+| Yes          | Yes                   | No                     |            2130 |         1038 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------+---------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal       |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+----------------------------+---------------------+------------------+----------------+
+|  clk_IBUF_BUFG | seg_data[4]_i_1_n_0        |                     |                1 |              1 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[6][2]       | rst_IBUF            |                1 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[56][29]     | rst_IBUF            |                1 |              4 |
+|  clk_IBUF_BUFG |                            | scan[3]_i_1_n_0     |                1 |              4 |
+|  clk_IBUF_BUFG |                            | state[2]            |                2 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[59][3]      | rst_IBUF            |                4 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[49][31]     | rst_IBUF            |                2 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[46][31]_1   | rst_IBUF            |                3 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[124][31]    | rst_IBUF            |                3 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[26][25]     | rst_IBUF            |                3 |              4 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[3][31]      | rst_IBUF            |                5 |              5 |
+|  clk_IBUF_BUFG | cpu/IF/RD_reg[4]_0[0]      | rst_IBUF            |                1 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[48][31]     | rst_IBUF            |                4 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[58][31]     | rst_IBUF            |                4 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[127][28]    | rst_IBUF            |                5 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[38][2]      | rst_IBUF            |                1 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[18][9]      | rst_IBUF            |                3 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[9][31]      | rst_IBUF            |                3 |              5 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[126][3]     | rst_IBUF            |                2 |              6 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[40][31]     | rst_IBUF            |                5 |              6 |
+|  clk_IBUF_BUFG | seg_data[4]_i_1_n_0        | seg_data[6]_i_1_n_0 |                1 |              6 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[20][6]      | rst_IBUF            |                2 |              6 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[25][31]     | rst_IBUF            |                1 |              7 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[21][24]     | rst_IBUF            |                2 |              7 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[15][11]     | rst_IBUF            |                3 |              7 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[63][28]     | rst_IBUF            |                5 |              8 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[46][2]      | rst_IBUF            |                8 |              8 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[70][31]     | rst_IBUF            |                6 |              8 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[31][2]      | rst_IBUF            |                8 |              8 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[30][25]     | rst_IBUF            |                8 |              8 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[108][5]     | rst_IBUF            |                5 |              9 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[123][31]    | rst_IBUF            |                7 |              9 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[103][31]    | rst_IBUF            |                6 |              9 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[109][0]     | rst_IBUF            |                5 |              9 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[74][0]      | rst_IBUF            |                3 |             10 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[69][0]      | rst_IBUF            |                6 |             10 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[71][31]     | rst_IBUF            |                4 |             10 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[106][3]_0   | rst_IBUF            |                3 |             10 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[107][0]     | rst_IBUF            |                4 |             10 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[76][0]_0    | rst_IBUF            |                4 |             11 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[54][1]      | rst_IBUF            |                6 |             11 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[104][31]    | rst_IBUF            |                5 |             11 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[110][3]     | rst_IBUF            |                2 |             11 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[10][31]     | rst_IBUF            |                9 |             12 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[14][17]     | rst_IBUF            |                6 |             12 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[72][31]     | rst_IBUF            |                6 |             12 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[41][31]     | rst_IBUF            |                8 |             12 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[19][25]     | rst_IBUF            |               10 |             13 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[59][31]     | rst_IBUF            |                8 |             13 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[66][31]     | rst_IBUF            |                8 |             15 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[23][2]      | rst_IBUF            |                5 |             17 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[112][31]    | rst_IBUF            |                3 |             17 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[19][31]     | rst_IBUF            |                9 |             18 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[45][5]      | rst_IBUF            |               12 |             18 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[27][31]     | rst_IBUF            |               13 |             19 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[13][28]     | rst_IBUF            |               12 |             19 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[62][29]     | rst_IBUF            |               19 |             20 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[17][31]     | rst_IBUF            |                8 |             20 |
+|  clk_IBUF_BUFG |                            | clear               |                6 |             21 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[103][29]    | rst_IBUF            |               12 |             21 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[86][31]     | rst_IBUF            |                6 |             23 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[12][28]     | rst_IBUF            |               10 |             23 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[44][31]     | rst_IBUF            |               13 |             23 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[36][0]      | rst_IBUF            |                9 |             25 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[75][31]     | rst_IBUF            |                6 |             26 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[24][31]     | rst_IBUF            |               14 |             26 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[102][31]    | rst_IBUF            |               11 |             26 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[122][31]    | rst_IBUF            |               20 |             26 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[113][31]    | rst_IBUF            |                7 |             27 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[67][31]     | rst_IBUF            |                6 |             27 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[117][29]    | rst_IBUF            |                9 |             27 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[115][31]    | rst_IBUF            |               11 |             27 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[83][0]      | rst_IBUF            |               16 |             27 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[78][31]_0   | rst_IBUF            |                9 |             28 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[114][31]    | rst_IBUF            |                9 |             28 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[68][31]     | rst_IBUF            |                6 |             29 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[32][31]     | rst_IBUF            |               11 |             29 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[111][31]    | rst_IBUF            |               23 |             30 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[65][31]     | rst_IBUF            |               11 |             31 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[73][31]     | rst_IBUF            |                9 |             31 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[33][0]      | rst_IBUF            |               14 |             31 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[120][31]    | rst_IBUF            |               17 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[121][31]    | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[116][31]    | rst_IBUF            |               10 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[105][31]    | rst_IBUF            |               17 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[16][31]     | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[101][31]    | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[100][0]     | rst_IBUF            |               18 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[118][31]    | rst_IBUF            |                7 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[1][31]      |                     |               11 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[87][31]     | rst_IBUF            |               19 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[99][31]     | rst_IBUF            |               31 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[97][31]     | rst_IBUF            |               17 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[96][31]     | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[95][31]     | rst_IBUF            |               30 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[2][31]      |                     |               18 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[94][31]     | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[93][31]     | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[119][31]    | rst_IBUF            |                8 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[92][31]     | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[91][31]     | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[90][31]     | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[64][31]     | rst_IBUF            |                7 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[89][31]     | rst_IBUF            |                9 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[88][31]     | rst_IBUF            |                9 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[98][31]     | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[85][31]     | rst_IBUF            |               13 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[84][31]     | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[4][0]       | rst_IBUF            |               19 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[77][31]     | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[82][31]     | rst_IBUF            |               18 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[81][31]     | rst_IBUF            |               21 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/E[0]               | rst_IBUF            |               20 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[80][31]     | rst_IBUF            |               12 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[8][31]      | rst_IBUF            |               27 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[10][31][0] | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[11][31][0] | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[12][31][0] | rst_IBUF            |               10 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[13][31][0] | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[14][31][0] | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[15][31][0] | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[1][31][0]  | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[2][31][0]  | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[3][31][0]  | rst_IBUF            |               15 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[4][31][0]  | rst_IBUF            |               20 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[5][31][0]  | rst_IBUF            |               16 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[6][31][0]  | rst_IBUF            |               20 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[7][31][0]  | rst_IBUF            |               22 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[8][31][0]  | rst_IBUF            |               13 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[9][31][0]  | rst_IBUF            |               17 |             32 |
+|  clk_IBUF_BUFG | cpu/EXE/DM_reg[79][31]     | rst_IBUF            |               30 |             32 |
+|  clk_IBUF_BUFG | cpu/MEM/REG_reg[0][31][0]  |                     |               13 |             32 |
+|  clk_IBUF_BUFG | cpu/IF/E[0]                | rst_IBUF            |               13 |             36 |
+|  clk_IBUF_BUFG |                            |                     |               25 |             39 |
+|  clk_IBUF_BUFG | cpu/ID/ALUout_reg[31]_1    | rst_IBUF            |               28 |             78 |
+|  clk_IBUF_BUFG |                            | rst_IBUF            |              667 |           2122 |
++----------------+----------------------------+---------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     9 |
+| 5      |                     8 |
+| 6      |                     4 |
+| 7      |                     3 |
+| 8      |                     5 |
+| 9      |                     4 |
+| 10     |                     5 |
+| 11     |                     4 |
+| 12     |                     4 |
+| 13     |                     2 |
+| 15     |                     1 |
+| 16+    |                    86 |
++--------+-----------------------+
+
+

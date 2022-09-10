@@ -1,0 +1,622 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  9 13:29:57 2020
+# Process ID: 21700
+# Current directory: D:/COlab4/COlab4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/COlab4/COlab4.runs/synth_1/top.vds
+# Journal file: D:/COlab4/COlab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23452 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 383.426 ; gain = 97.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:274]
+INFO: [Synth 8-638] synthesizing module 'CPU' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/CPU.v:8]
+INFO: [Synth 8-638] synthesizing module 'INSTRUCTION_FETCH' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_FETCH.v:3]
+INFO: [Synth 8-256] done synthesizing module 'INSTRUCTION_FETCH' (1#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_FETCH.v:3]
+INFO: [Synth 8-638] synthesizing module 'INSTRUCTION_DECODE' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:101]
+WARNING: [Synth 8-5788] Register REG_reg[0] in module INSTRUCTION_DECODE is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:48]
+INFO: [Synth 8-256] done synthesizing module 'INSTRUCTION_DECODE' (2#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXECUTION' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/EXECUTION.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/EXECUTION.v:76]
+INFO: [Synth 8-256] done synthesizing module 'EXECUTION' (3#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/EXECUTION.v:3]
+WARNING: [Synth 8-350] instance 'EXE' of module 'EXECUTION' requires 26 connections, but only 23 given [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/CPU.v:85]
+INFO: [Synth 8-638] synthesizing module 'MEMORY' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/MEMORY.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMORY' (4#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/MEMORY.v:3]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (5#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/CPU.v:8]
+INFO: [Synth 8-226] default block is never used [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:289]
+WARNING: [Synth 8-6014] Unused sequential element cnt_2hz_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:248]
+WARNING: [Synth 8-6014] Unused sequential element clk_2hz_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:249]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:5]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[31]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[30]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[29]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[28]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[27]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[26]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[25]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[24]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[23]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[22]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[21]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[20]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[19]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[18]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[17]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[16]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[15]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[14]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[13]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[12]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[11]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[10]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[9]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[8]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[7]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[6]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[5]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[4]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[3]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[2]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[1]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port JT[0]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[31]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[30]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[29]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[28]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[27]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[26]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[25]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[24]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[23]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[22]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[21]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[20]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[19]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[18]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[17]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[16]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[15]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[14]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[13]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[12]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[11]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[10]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[9]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[8]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[7]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[6]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[5]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[4]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[3]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[2]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[1]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_PC[0]
+WARNING: [Synth 8-3331] design EXECUTION has unconnected port DX_jump
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 455.566 ; gain = 169.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 455.566 ; gain = 169.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/COlab4/COlab4.srcs/constrs_1/imports/½Ò°ó½m²ß/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/COlab4/COlab4.srcs/constrs_1/imports/½Ò°ó½m²ß/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/COlab4/COlab4.srcs/constrs_1/imports/½Ò°ó½m²ß/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 788.898 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 788.898 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 788.898 ; gain = 502.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 788.898 ; gain = 502.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'NPC_reg[31:0]' into 'DX_PC_reg[31:0]' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:63]
+INFO: [Synth 8-4471] merging register 'MemRead_reg' into 'MemtoReg_reg' [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:84]
+WARNING: [Synth 8-6014] Unused sequential element NPC_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:63]
+WARNING: [Synth 8-6014] Unused sequential element MemRead_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/INSTRUCTION_DECODE.v:84]
+INFO: [Synth 8-5546] ROM "REG_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jump0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUctr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RD" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:286]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 788.898 ; gain = 502.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |MEMORY__GB0   |           1|     33106|
+|2     |MEMORY__GB1   |           1|      8325|
+|3     |CPU__GC0      |           1|     13102|
+|4     |top__GC0      |           1|      4226|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 172   
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 141   
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 36    
+	   6 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module MEMORY 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 130   
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 138   
+Module INSTRUCTION_FETCH 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module INSTRUCTION_DECODE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 37    
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 34    
+	   6 Input      1 Bit        Muxes := 1     
+Module EXECUTION 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/COlab4/COlab4.srcs/sources_1/imports/COLab4/top.v:286]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/\ID/JT_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[0]' (FDC) to 'cpui_2/ID/JT_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[1]' (FDC) to 'cpui_2/ID/JT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[2]' (FDC) to 'cpui_2/ID/JT_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[3]' (FDC) to 'cpui_2/ID/JT_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[4]' (FDC) to 'cpui_2/ID/JT_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[5]' (FDC) to 'cpui_2/ID/JT_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[6]' (FDC) to 'cpui_2/ID/JT_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/ID/imm_reg[7]' (FDC) to 'cpui_2/ID/JT_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cpui_2/EXE/XM_MemRead_reg' (FDC) to 'cpui_2/EXE/XM_MemtoReg_reg'
+WARNING: [Synth 8-3332] Sequential element (PC_reg[31]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[30]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[29]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[28]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[27]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[26]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[25]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[24]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[23]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[22]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[21]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[20]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[19]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[18]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[17]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[16]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[15]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[14]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[13]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[12]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[11]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[10]) is unused and will be removed from module INSTRUCTION_FETCH.
+WARNING: [Synth 8-3332] Sequential element (PC_reg[0]) is unused and will be removed from module INSTRUCTION_FETCH.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |MEMORY__GB0   |           1|     15266|
+|2     |MEMORY__GB1   |           1|      1883|
+|3     |CPU__GC0      |           1|     12332|
+|4     |top__GC0      |           1|      3705|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |MEMORY__GB0   |           1|     15266|
+|2     |MEMORY__GB1   |           1|      1883|
+|3     |CPU__GC0      |           1|     12332|
+|4     |top__GC0      |           1|      3705|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[255]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[254]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[253]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[252]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[252]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[252]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin cpu/IF/instruction[252]_inferred:in0[28] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   104|
+|3     |LUT1   |  8259|
+|4     |LUT2   |   226|
+|5     |LUT3   |   273|
+|6     |LUT4   |   272|
+|7     |LUT5   |  1092|
+|8     |LUT6   |  5728|
+|9     |MUXF7  |  1862|
+|10    |MUXF8  |   767|
+|11    |FDCE   |  1393|
+|12    |FDPE   |     2|
+|13    |FDRE   |  4163|
+|14    |FDSE   |     8|
+|15    |IBUF   |    15|
+|16    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   | 24180|
+|2     |  cpu    |CPU                | 18650|
+|3     |    EXE  |EXECUTION          |  2315|
+|4     |    ID   |INSTRUCTION_DECODE |  2251|
+|5     |    IF   |INSTRUCTION_FETCH  |  8034|
+|6     |    MEM  |MEMORY             |  6050|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1198.668 ; gain = 912.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 1198.668 ; gain = 579.359
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1198.668 ; gain = 912.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2748 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 197 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 1198.668 ; gain = 925.215
+INFO: [Common 17-1381] The checkpoint 'D:/COlab4/COlab4.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1198.668 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 13:31:26 2020...
